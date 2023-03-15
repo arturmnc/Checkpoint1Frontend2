@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-}
 
+}
 
 :root {
   font-size: 62.5%;
@@ -22,16 +22,25 @@ body {
 
 h1 {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 p {
   text-align: center;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: black;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .text {
@@ -65,7 +74,7 @@ label {
 
 }
 
-input[type=submit] {
+#submit {
   background-color: #0062ffa2;
   color: white;
   padding: 12px 20px;
@@ -100,51 +109,81 @@ input[type=submit] {
 }
 
 .tituloForm {
-  color: #black;
+  color: black;
 }
 
 input::placeholder {
   color: black;
 }
 
-.Descrição::placeholder{
+.descricao::placeholder{
   color: black;
 }
+
+div {
+  text-align: center;
+}
+
+div.h2 {
+  font-size:8vw;
+}
+
+div.p {
+  font-size:2vw;
+}
+
 
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+
+  div.h2 {
+    font-size: 30px;
+  }
+
+  div.p {
+    font-size: 30px;
+  }
 }
 
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-.row {margin: 0 -5px;}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(0, 76, 255, 0.178));
-  background-color: rgba(0,0,0,.3);
-  color: rgb(0, 0, 0);
-}
-
-@media screen and (max-width: 600px) {
   .column {
     width: 100%;
-    display: block;
+    padding: 10px;
+    float: left;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
     margin-bottom: 20px;
   }
 
+
+  @media screen and (min-width: 768px) {
+    .column {
+      width: 50%;
+    }
+
+    div.h2 {
+      font-size: 80px;
+    }
+
+    div.p {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .column {
+      width: 33.33%;
+    }
+  }
