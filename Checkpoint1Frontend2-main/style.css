@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-image: url("./img/mkwallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 12.5rem;
+  width: auto;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(0, 76, 255, 0.178));
+  background-color: rgba(0,0,0,.3);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color:black;
+
+}
+.main-row{
+}
+.card {
+  flex-direction: column;
+  margin: 0;
+}
+
+input[type=submit] {
+  background-color: #0062ffa2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.container {
+  border-radius: 5px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(0, 76, 255, 0.178));
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tituloForm {
+  color: #black;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.Descrição::placeholder{
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(0, 76, 255, 0.178));
+  background-color: rgba(0,0,0,.3);
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
